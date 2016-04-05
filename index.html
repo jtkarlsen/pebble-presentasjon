@@ -108,9 +108,9 @@
 
 class: frontpage, center
 
-# Pebble!
+# Pebble.js
 
-.subtitle[Jan Karlsen<br>06/11/2015]
+.subtitle[Jan Karlsen<br>06/04/2016]
 
 ---
 <div style="padding-top: 10%; padding-left: 6%;">
@@ -123,19 +123,82 @@ class: frontpage, center
 
 ---
 
-<img src="pebble_diving.jpg" style="display:block; margin:0 auto; position:relative; max-height: 100%; width: 55%;"/>
+# Utvikling
+
+* Primert er apper skrevet i C
+* Pebble.js er i beta
+* Apper i C kjører på klokken
+* Apper i Javascipt kjører på telefonen
+* Mer strømintensivt, men lettere og morsommere
 
 ---
 
-<img src="seethrough.jpg" style="display:block; margin:0 auto; position:relative; height: 100%; width: 55%;"/>
+# Kort
+
+```Cards
+var card = new UI.Card({
+  title: 'Pebble.js',
+  icon: 'images/menu_icon.png',
+  subtitle: 'Hello World!',
+  body: 'Press any button.',
+  subtitleColor: 'indigo',
+  bodyColor: '#9a0036'
+});
+
+card.show();
+```
 
 ---
 
-<img src="glukose.jpg" style="display:block; margin:0 auto; position:relative; max-height: 100%; max-width: 55%;"/>
+<img src="pebble_card.png" style="display:block; margin:0 auto; position:relative; max-height: 100%; max-width: 40%;"/>
 
 ---
 
-<img src="pebble_control_light.jpg" style="display:block; margin:0 auto; position:relative; height: 100%; width: 100%;"/>
+# Meny
+
+```Menu
+var menu = new UI.Menu({
+  backgroundColor: 'black',
+  textColor: 'blue',
+  highlightBackgroundColor: 'blue',
+  highlightTextColor: 'black',
+  sections: [{
+    title: 'First section',
+    items: [{
+      title: 'First Item',
+      subtitle: 'Some subtitle',
+      icon: 'images/item_icon.png'
+    }, {
+      title: 'Second item'
+    }]
+  }]
+});
+
+menu.show();
+
+```
+---
+
+<img src="pebble_menu.png" style="display:block; margin:0 auto; position:relative; max-height: 100%; max-width: 40%;"/>
+
+---
+
+# Elementer
+
+* Bilde
+* Teks
+* Sirkel
+* Rektangel
+
+---
+
+# Systemkall
+
+* Vibrasjon
+* Lys
+* Oppvåkning
+* Akselerometer
+* Stemme
 
 ---
 
@@ -184,14 +247,10 @@ cloudpebble.net
 <iframe src="http://cloudpebble.net" style="height: 95%; width: 100%; border: none;"></iframe>
 
 ---
-developer.pebble.com
-<iframe src="http://developer.pebble.com" style="height: 95%; width: 100%; border: none;"></iframe>
-
----
 
 class: endpage, center
 
-# Spørsmål?
+# Takk!
 
 
     </textarea>
